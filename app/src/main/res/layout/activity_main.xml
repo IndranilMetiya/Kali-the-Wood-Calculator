@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:background="#5a75e7"
+    >
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+
+        >
+
+        <EditText
+            android:id="@+id/inch1"
+            android:layout_width="61dp"
+            android:layout_height="wrap_content"
+            android:hint="ft  (L)"
+            android:layout_marginLeft="5dp"
+            android:inputType="number"
+            app:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <EditText
+            android:id="@+id/ft1"
+            android:layout_width="58dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="35dp"
+            android:hint="inch (L)"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="97dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <EditText
+            android:id="@+id/inch2"
+            android:layout_width="64dp"
+            android:layout_height="42dp"
+            android:hint="ft  (Rf)"
+            android:layout_marginLeft="35dp"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="192dp"
+            tools:layout_editor_absoluteY="62dp" />
+
+        <EditText
+
+            android:id="@+id/ft2"
+            android:layout_width="66dp"
+            android:layout_height="39dp"
+            android:hint="inch(Rf)"
+            android:layout_marginLeft="35dp"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="301dp"
+            tools:layout_editor_absoluteY="64dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="75dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/answer"
+            android:layout_width="104dp"
+            android:layout_height="51dp"
+            android:textSize="40dp"
+            android:layout_marginLeft="5dp"
+            tools:layout_editor_absoluteX="14dp"
+            tools:layout_editor_absoluteY="140dp"
+            />
+
+        <TextView
+            android:id="@+id/answer1"
+            android:layout_width="105dp"
+            android:layout_height="51dp"
+            android:textSize="40dp"
+            android:layout_marginLeft="25dp"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="140dp"
+            />
+
+        <TextView
+            android:id="@+id/answer2"
+            android:layout_width="99dp"
+            android:layout_height="52dp"
+            android:textSize="40dp"
+            tools:layout_editor_absoluteX="269dp"
+            tools:layout_editor_absoluteY="139dp"
+            android:layout_marginLeft="25dp"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="200dp"
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CALCULATE"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="231dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter price per cubic feet"
+        android:layout_marginTop="280dp"
+        android:inputType="numberDecimal"
+        android:id="@+id/pricecc"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="330dp"
+        android:textSize="35dp"
+        android:id="@+id/resultMain"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="final price"
+        android:layout_marginTop="410dp"
+        android:id="@+id/finalPrice"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="CALCULATE Section/beam"
+        android:layout_marginTop="515dp"
+        android:textSize="25dp"
+        android:id="@+id/CalculateNormal"/>
+    <Button
+        android:layout_width="350dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginLeft="30dp"
+        android:layout_height="50dp"
+        android:text="history"
+        android:id="@+id/histbtn"/>
+
+
+</RelativeLayout>
